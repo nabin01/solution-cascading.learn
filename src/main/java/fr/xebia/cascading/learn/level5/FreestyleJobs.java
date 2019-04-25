@@ -1,9 +1,17 @@
 package fr.xebia.cascading.learn.level5;
 
 import cascading.flow.FlowDef;
+import cascading.operation.aggregator.Count;
 import cascading.operation.aggregator.First;
-import cascading.pipe.HashJoin;
+import cascading.operation.expression.ExpressionFilter;
+import cascading.operation.expression.ExpressionFunction;
+import cascading.operation.regex.RegexGenerator;
+import cascading.operation.regex.RegexSplitGenerator;
+import cascading.operation.regex.RegexSplitter;
+import cascading.pipe.*;
 import cascading.tap.Tap;
+import cascading.tuple.Fields;
+import javafx.scene.chart.PieChart;
 
 /**
  * You now know all the basics operators. Here you will have to compose them by yourself.
@@ -12,12 +20,20 @@ public class FreestyleJobs {
 
 	/**
 	 * Word count is the Hadoop "Hello world" so it should be the first step.
-	 * 
+	 * <p>
 	 * source field(s) : "line"
 	 * sink field(s) : "word","count"
 	 */
 	public static FlowDef countWordOccurences(Tap<?, ?, ?> source, Tap<?, ?, ?> sink) {
-		return null;
+		Pipe assembly = new Pipe("assembly");
+//		assembly = new Each(assembly, new Fields("line"), new RegexSplitGenerator(new Fields("word"),"[^A-Za-z\\-]"));
+//		assembly = new Each(assembly, new ExpressionFilter("word.length() == 0", String.class));
+
+		assembly = new Each(assembly, new Fields("line"), new RegexGenerator(new Fields("word"), "(?<!\\pL)(?=\\pL)[^ ]*(?<=\\pL)(?!\\pL)"));
+		assembly = new Each(assembly, new ExpressionFunction(new Fields("word"),"word.toLowerCase()", String.class));
+		Pipe groupBy = new GroupBy(assembly);
+		Pipe count = new Every(groupBy, new Count(new Fields("count")));
+		return FlowDef.flowDef().addSource(assembly, source).addTailSink(count, sink);
 	}
 	
 	/**
