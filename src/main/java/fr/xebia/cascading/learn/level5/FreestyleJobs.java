@@ -29,7 +29,8 @@ public class FreestyleJobs {
 //		assembly = new Each(assembly, new Fields("line"), new RegexSplitGenerator(new Fields("word"),"[^A-Za-z\\-]"));
 //		assembly = new Each(assembly, new ExpressionFilter("word.length() == 0", String.class));
 
-		assembly = new Each(assembly, new Fields("line"), new RegexGenerator(new Fields("word"), "(?<!\\pL)(?=\\pL)[^ ]*(?<=\\pL)(?!\\pL)"));
+//		assembly = new Each(assembly, new Fields("line"), new RegexGenerator(new Fields("word"), "(?<!\\pL)(?=\\pL)[^ ]*(?<=\\pL)(?!\\pL)"));
+		assembly = new Each(assembly, new Fields("line"), new RegexSplitGenerator(new Fields("word"), "[\\W]+"));
 		assembly = new Each(assembly, new ExpressionFunction(new Fields("word"),"word.toLowerCase()", String.class));
 		Pipe groupBy = new GroupBy(assembly);
 		Pipe count = new Every(groupBy, new Count(new Fields("count")));

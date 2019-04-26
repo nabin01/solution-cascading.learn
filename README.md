@@ -1,7 +1,7 @@
 cascading.learn
 =================
 
-Test driven learning of Cascading.
-http://www.cascading.org/
+Solution to BertrandDechoux/cascading.learn
+Cascading: http://www.cascading.learn
 
-Clone the repository, run the tests, and fix each one by one by starting on level 1.
+
