@@ -39,6 +39,7 @@ public class NonLinearDataflow {
 
 		Pipe join = new CoGroup(lhs, new Fields("year"), rhs, new Fields("year"), new Fields("year1", "president", "year2", "party"), new InnerJoin());
 		join = new Retain(join, new Fields("president", "party"));
+
 		return FlowDef.flowDef().addSource(lhs, presidentsSource).addSource(rhs, partiesSource).addTailSink(join, sink);
 	}
 

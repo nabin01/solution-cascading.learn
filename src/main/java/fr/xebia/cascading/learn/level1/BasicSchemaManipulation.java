@@ -42,6 +42,7 @@ public class BasicSchemaManipulation {
     public static FlowDef retainField(Tap<?, ?, ?> source, Tap<?, ?, ?> sink) {
         Pipe pipe = new Pipe("pipe");
         pipe = new Retain(pipe, new Fields("line"));
+
         return FlowDef.flowDef().addSource(pipe, source).addTailSink(pipe, sink);
     }
 
@@ -56,6 +57,7 @@ public class BasicSchemaManipulation {
     public static FlowDef renameField(Tap<?, ?, ?> source, Tap<?, ?, ?> sink) {
         Pipe pipe = new Pipe("pipe");
         pipe = new Rename(pipe, new Fields("renameme"), new Fields("line"));
+
         return FlowDef.flowDef().addSource(pipe, source).addTailSink(pipe, sink);
     }
 

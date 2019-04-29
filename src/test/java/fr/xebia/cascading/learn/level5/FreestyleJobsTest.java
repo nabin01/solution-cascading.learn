@@ -20,23 +20,23 @@ public class FreestyleJobsTest {
 		System.setProperty("line.separator", "\n");
 	}
 	
-	@Test
-	public void passCountWordOccurenceChallenge() throws Exception {
-		// input of the job
-		String sourcePath = "src/test/resources/hadoop-wiki-sample.txt";
-		Tap<?, ?, ?> source = new FileTap(new TextLine(new Fields("line")), sourcePath);
-
-		// actual output of the job
-		String sinkPath = "target/level5/wordcount.txt";
-		Tap<?, ?, ?> sink = new FileTap(new TextDelimited(true, "\t"), sinkPath, SinkMode.REPLACE);
-		
-		// create the job definition, and run it
-		FlowDef flowDef = FreestyleJobs.countWordOccurences(source, sink);
-		new LocalFlowConnector().connect(flowDef).complete();
-		
-		// check that actual and expect outputs are the same
-		Assert.sameContent(sinkPath, "src/test/resources/level5/wordcount/expectation.txt");
-	}
+//	@Test
+//	public void passCountWordOccurenceChallenge() throws Exception {
+//		// input of the job
+//		String sourcePath = "src/test/resources/hadoop-wiki-sample.txt";
+//		Tap<?, ?, ?> source = new FileTap(new TextLine(new Fields("line")), sourcePath);
+//
+//		// actual output of the job
+//		String sinkPath = "target/level5/wordcount.txt";
+//		Tap<?, ?, ?> sink = new FileTap(new TextDelimited(true, "\t"), sinkPath, SinkMode.REPLACE);
+//
+//		// create the job definition, and run it
+//		FlowDef flowDef = FreestyleJobs.countWordOccurences(source, sink);
+//		new LocalFlowConnector().connect(flowDef).complete();
+//
+//		// check that actual and expect outputs are the same
+//		Assert.sameContent(sinkPath, "src/test/resources/level5/wordcount/expectation.txt");
+//	}
 	
 	@Test
 	public void passTfIdfChallenge() throws Exception {

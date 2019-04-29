@@ -9,6 +9,11 @@ import cascading.operation.regex.RegexGenerator;
 import cascading.operation.regex.RegexSplitGenerator;
 import cascading.operation.regex.RegexSplitter;
 import cascading.pipe.*;
+import cascading.pipe.assembly.Retain;
+import cascading.pipe.joiner.InnerJoin;
+import cascading.pipe.joiner.LeftJoin;
+import cascading.pipe.joiner.OuterJoin;
+import cascading.pipe.joiner.RightJoin;
 import cascading.tap.Tap;
 import cascading.tuple.Fields;
 import javafx.scene.chart.PieChart;
@@ -28,12 +33,14 @@ public class FreestyleJobs {
 		Pipe assembly = new Pipe("assembly");
 //		assembly = new Each(assembly, new Fields("line"), new RegexSplitGenerator(new Fields("word"),"[^A-Za-z\\-]"));
 //		assembly = new Each(assembly, new ExpressionFilter("word.length() == 0", String.class));
-
 //		assembly = new Each(assembly, new Fields("line"), new RegexGenerator(new Fields("word"), "(?<!\\pL)(?=\\pL)[^ ]*(?<=\\pL)(?!\\pL)"));
 		assembly = new Each(assembly, new Fields("line"), new RegexSplitGenerator(new Fields("word"), "[\\W]+"));
 		assembly = new Each(assembly, new ExpressionFunction(new Fields("word"),"word.toLowerCase()", String.class));
+
+		// group by and count
 		Pipe groupBy = new GroupBy(assembly);
 		Pipe count = new Every(groupBy, new Count(new Fields("count")));
+
 		return FlowDef.flowDef().addSource(assembly, source).addTailSink(count, sink);
 	}
 	
@@ -76,7 +83,14 @@ public class FreestyleJobs {
 	 * PPS : You can remove results where tfidf < 0.1
 	 */
 	public static FlowDef computeTfIdf(Tap<?, ?, ?> source, Tap<?, ?, ?> sink) {
-		return null;
+		Pipe assembly = new Pipe("assembly");
+		Pipe temp = new Pipe("temp");
+
+		Pipe docId = new Retain(assembly, new Fields("id"));
+		Pipe doc = new Retain(temp, new Fields("content"));
+
+		Pipe join = new HashJoin(docId, new Fields("id"), doc, new Fields("content"), new RightJoin());
+
+		return FlowDef.flowDef().addSource(assembly, source).addSource(temp, source).addTailSink(join, sink);
 	}
-	
 }

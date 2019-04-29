@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ad17b46-d844-42af-8e3b-a8a0995cfa08" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level1/BasicSchemaManipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level1/BasicSchemaManipulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level3/Reducing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level3/Reducing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level4/NonLinearDataflow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level4/NonLinearDataflow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level5/FreestyleJobs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level5/FreestyleJobs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/xebia/cascading/learn/level5/FreestyleJobsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/xebia/cascading/learn/level5/FreestyleJobsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,17 +25,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level5/FreestyleJobs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="415">
+              <caret line="90" column="95" selection-start-line="90" selection-start-column="95" selection-end-line="90" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level6/CleanCode.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/level5/tfidf/expectation.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state relative-caret-position="165">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/hadoop-wiki-extract.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -42,6 +54,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>s</find>
+      <find>availability</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -50,11 +63,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level1/BasicSchemaManipulation.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level2/Mapping.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level2/CustomSplitFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level1/BasicSchemaManipulation.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level3/Reducing.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level4/NonLinearDataflow.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/xebia/cascading/learn/level5/FreestyleJobsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level5/FreestyleJobs.java" />
       </list>
     </option>
@@ -207,6 +221,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="level0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cascading.learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cascading.learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
               <item name="level1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -249,15 +272,6 @@
               <item name="cascading.learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="cascading.learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="level6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cascading.learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cascading.learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -280,7 +294,9 @@
               <item name="cascading.learn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="level5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cascading.learn" type="b2602c69:ProjectViewProjectNode" />
@@ -288,16 +304,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="level4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cascading.learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cascading.learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="level4" type="462c0819:PsiDirectoryNode" />
-              <item name="split" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cascading.learn" type="b2602c69:ProjectViewProjectNode" />
@@ -314,18 +320,12 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="level5" type="462c0819:PsiDirectoryNode" />
-              <item name="wordcount" type="462c0819:PsiDirectoryNode" />
+              <item name="tfidf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cascading.learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="cascading.learn" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cascading.learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cascading.learn" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="level5" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -350,7 +350,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.FreestyleJobsTest.passTfIdfChallenge">
     <configuration name="FreestyleJobsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cascading.learn" />
       <extension name="coverage">
@@ -366,8 +366,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FreestyleJobsTest.passTfIdfChallenge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cascading.learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.xebia.cascading.learn.level5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.xebia.cascading.learn.level5" />
+      <option name="MAIN_CLASS_NAME" value="fr.xebia.cascading.learn.level5.FreestyleJobsTest" />
+      <option name="METHOD_NAME" value="passTfIdfChallenge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FreestyleJobsTest.passTfIdfChallenge" />
         <item itemvalue="JUnit.FreestyleJobsTest" />
       </list>
     </recent_temporary>
@@ -386,8 +403,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FreestyleJobsTest - 2019.04.26 at 12h 15m 18s.xml">
-      <configuration name="FreestyleJobsTest" configurationId="JUnit" />
+    <history-entry file="FreestyleJobsTest_passTfIdfChallenge - 2019.04.29 at 17h 14m 33s.xml">
+      <configuration name="FreestyleJobsTest.passTfIdfChallenge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FreestyleJobsTest_passTfIdfChallenge - 2019.04.29 at 17h 14m 59s.xml">
+      <configuration name="FreestyleJobsTest.passTfIdfChallenge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FreestyleJobsTest_passTfIdfChallenge - 2019.04.29 at 17h 15m 31s.xml">
+      <configuration name="FreestyleJobsTest.passTfIdfChallenge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FreestyleJobsTest_passTfIdfChallenge - 2019.04.29 at 17h 18m 28s.xml">
+      <configuration name="FreestyleJobsTest.passTfIdfChallenge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FreestyleJobsTest_passTfIdfChallenge - 2019.04.29 at 17h 20m 29s.xml">
+      <configuration name="FreestyleJobsTest.passTfIdfChallenge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FreestyleJobsTest_passTfIdfChallenge - 2019.04.29 at 17h 21m 32s.xml">
+      <configuration name="FreestyleJobsTest.passTfIdfChallenge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FreestyleJobsTest_passTfIdfChallenge - 2019.04.29 at 17h 31m 33s.xml">
+      <configuration name="FreestyleJobsTest.passTfIdfChallenge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FreestyleJobsTest_passTfIdfChallenge - 2019.04.29 at 17h 43m 42s.xml">
+      <configuration name="FreestyleJobsTest.passTfIdfChallenge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FreestyleJobsTest_passTfIdfChallenge - 2019.04.29 at 17h 44m 19s.xml">
+      <configuration name="FreestyleJobsTest.passTfIdfChallenge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FreestyleJobsTest_passTfIdfChallenge - 2019.04.29 at 17h 45m 07s.xml">
+      <configuration name="FreestyleJobsTest.passTfIdfChallenge" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -402,10 +446,10 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Job Explorer" order="6" />
       <window_info id="Designer" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="8" visible="true" weight="0.25378788" />
+      <window_info content_ui="combo" id="Project" order="8" weight="0.25378788" />
       <window_info id="Structure" order="9" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.9516129" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Console" order="4" />
@@ -435,10 +479,10 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Job Explorer" order="6" />
       <window_info id="Designer" order="7" />
-      <window_info content_ui="combo" id="Project" order="8" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="8" weight="0.25378788" />
       <window_info id="Structure" order="9" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.9516129" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Console" order="4" />
@@ -527,13 +571,6 @@
     <entry file="file://$PROJECT_DIR$/target/level4/cogroup.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level2/Mapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/level4/split/expectation-socialist.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -558,39 +595,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/target/level4/split-socialist.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level4/NonLinearDataflow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="69" column="106" selection-start-line="69" selection-start-column="106" selection-end-line="69" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level3/Reducing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="54" column="87" selection-start-line="54" selection-start-column="87" selection-end-line="54" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level1/BasicSchemaManipulation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="58" column="79" selection-start-line="58" selection-start-column="79" selection-end-line="58" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level2/CustomSplitFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#522#551#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/cascading/cascading-core/3.0.1/cascading-core-3.0.1.jar!/cascading/operation/expression/ExpressionFilter.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -624,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/xebia/cascading/learn/level5/FreestyleJobsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level6/CleanCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -638,10 +635,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/fifth-france-parties.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/fifth-france-presidents.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level3/Reducing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level4/NonLinearDataflow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level0/PlainCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level1/BasicSchemaManipulation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level2/Mapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level2/CustomSplitFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#522#551#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/hadoop-wiki-extract.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/level5/tfidf/expectation.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/xebia/cascading/learn/level5/FreestyleJobsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cascading/cascading-core/3.0.1/cascading-core-3.0.1.jar!/cascading/pipe/assembly/Retain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/xebia/cascading/learn/level5/FreestyleJobs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state relative-caret-position="415">
+          <caret line="90" column="95" selection-start-line="90" selection-start-column="95" selection-end-line="90" selection-end-column="95" />
         </state>
       </provider>
     </entry>

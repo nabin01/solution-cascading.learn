@@ -52,6 +52,7 @@ public class Reducing {
     public static FlowDef efficientlyAggregate(Tap<?, ?, ?> source, Tap<?, ?, ?> sink) {
         Pipe assembly = new Pipe("assembly");
         assembly = new AggregateBy(assembly, new Fields("word"), new CountBy(new Fields("count")));
+
         return FlowDef.flowDef().addSource(assembly, source).addTailSink(assembly, sink);
     }
 }
