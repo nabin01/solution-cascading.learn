@@ -61,7 +61,7 @@ public class NonLinearDataflow {
 	public static FlowDef split(Tap<?, ?, ?> source,
 															Tap<?, ?, ?> gaullistSink, Tap<?, ?, ?> republicanSink, Tap<?, ?, ?> socialistSink) {
 		Pipe assembly = new Pipe("assembly");
-` `		Pipe gaullist = new Each(assembly, new Fields("president", "party"), new ExpressionFilter("!party.equals(\"Gaullist\")", String.class));
+		Pipe gaullist = new Each(assembly, new Fields("president", "party"), new ExpressionFilter("!party.equals(\"Gaullist\")", String.class));
 
 		Pipe republican = new Pipe("republican,", assembly);
 		republican = new Each(republican, new Fields("president", "party"), new ExpressionFilter("!party.equals(\"Republican\")", String.class));
