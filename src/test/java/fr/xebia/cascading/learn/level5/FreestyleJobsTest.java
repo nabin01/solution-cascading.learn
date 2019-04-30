@@ -47,11 +47,11 @@ public class FreestyleJobsTest {
 		// actual output of the job
 		String sinkPath = "target/level5/tfidf.txt";
 		Tap<?, ?, ?> sink = new FileTap(new TextDelimited(true, "\t"), sinkPath, SinkMode.REPLACE);
-		
+
 		// create the job definition, and run it
 		FlowDef flowDef = FreestyleJobs.computeTfIdf(source, sink);
 		new LocalFlowConnector().connect(flowDef).complete();
-		
+
 		// check that actual and expect outputs are the same
 		Assert.sameContent(sinkPath, "src/test/resources/level5/tfidf/expectation.txt");
 	}
